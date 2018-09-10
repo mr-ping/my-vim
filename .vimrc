@@ -1,6 +1,13 @@
 set number
 set backspace=2
 
+" Mapping shortcut keys
+nmap J <C-w>j
+nmap H <C-w>h
+nmap K <C-w>k
+nmap L <C-w>l
+nmap W <C-w>w
+
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
