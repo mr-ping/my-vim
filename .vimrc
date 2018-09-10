@@ -77,15 +77,17 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_interpreter_path',
   \  'g:ycm_python_sys_path'
   \]
-let g:ycm_global_ycm_extra_conf = '.vim/plugged/YouCompleteMe/third_party/ycmd/global_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/plugged/global_extra_conf.py'
 
 
 colorscheme dracula
-set background=dark
-autocmd ColorScheme dracula winheight Normal ctermbg=256
+"autocmd ColorScheme dracula winheight Normal ctermbg=256
+let g:dracula_bold = 1
+let g:dracula_colorterm = 1
 
 
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='dracula'
 
 
 " Syntastic Coniguration
