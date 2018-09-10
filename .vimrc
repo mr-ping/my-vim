@@ -8,6 +8,12 @@ nmap K <C-w>k
 nmap L <C-w>l
 nmap W <C-w>w
 
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap ' ''<Esc>i
+imap ,, <ESC>la
+
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
