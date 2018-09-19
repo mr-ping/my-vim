@@ -2,11 +2,11 @@ set number
 set backspace=2
 
 " Mapping shortcut keys
-nmap J <C-w>j
-nmap H <C-w>h
-nmap K <C-w>k
-nmap L <C-w>l
-nmap W <C-w>w
+nmap <C-j> <C-w>j
+nmap <C-h> <C-w>h
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+nmap <C-w> <C-w>w
 
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
