@@ -1,18 +1,25 @@
+" Basics
 set number
 set backspace=2
 
 " Mapping shortcut keys
+let mapleader = ","
+
 nmap <C-j> <C-w>j
 nmap <C-h> <C-w>h
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <C-w> <C-w>w
 
+" Auto complete brackets
 inoremap ( ()<Esc>i
 inoremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap ' ''<Esc>i
 imap ,, <ESC>la
+
+" fold code
+set foldmethod=indent
 
 
 " Specify a directory for plugins
@@ -57,8 +64,6 @@ Plug 'scrooloose/nerdtree'
 "
 "" Initialize plugin system
 call plug#end()
-
-let mapleader = ","
 
 let g:ycm_autoclose_preview_window_after_completion = 1
 "let g:ycm_autoclose_preview_window_after_insertion = 1
