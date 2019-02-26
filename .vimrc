@@ -1,6 +1,7 @@
 " Basics
 set number
 set backspace=2
+set updatetime=500
 
 " Mapping shortcut keys
 let mapleader = ","
@@ -11,12 +12,14 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 nmap <C-w> <C-w>w
 
+set pastetoggle=<F3>
+
 " Auto complete brackets
-inoremap ( ()<Esc>i
-inoremap [ []<Esc>i
-inoremap { {}<Esc>i
-inoremap ' ''<Esc>i
-imap ,, <ESC>la
+"inoremap ( ()<Esc>i
+"inoremap [ []<Esc>i
+"inoremap { {}<Esc>i
+"inoremap ' ''<Esc>i
+"imap ,, <ESC>la
 
 " fold code
 set foldmethod=indent
@@ -36,6 +39,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'edkolev/tmuxline.vim'
 
 "" Any valid git URL is allowed
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -102,6 +107,7 @@ colorscheme dracula
 "autocmd ColorScheme dracula winheight Normal ctermbg=256
 let g:dracula_bold = 1
 let g:dracula_colorterm = 1
+set t_Co=256
 
 
 let g:airline#extensions#tabline#enabled = 1
@@ -139,4 +145,4 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_id_checkers = 1
 
 
-map <F7> :NERDTreeToggle<CR>
+map <F8> :NERDTreeToggle<CR>
