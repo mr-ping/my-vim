@@ -2,6 +2,7 @@
 set number
 set backspace=2
 set updatetime=500
+set hlsearch
 
 " Mapping shortcut keys
 let mapleader = ","
