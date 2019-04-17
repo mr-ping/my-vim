@@ -82,6 +82,7 @@ let g:ycm_seed_identifiers_with_syntax = 1
 nnoremap <leader>g :YcmCompleter GoToDeclaration<CR>
 nnoremap <leader>d :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>r :YcmCompleter GoToReferences<CR>
+nnoremap <leader>t :YcmCompleter GetType<CR>
 
 "python with virtualenv support
 "func! SetPythonBinaryPath(aPath)
