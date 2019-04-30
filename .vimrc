@@ -15,6 +15,15 @@ nmap <C-w> <C-w>w
 
 set pastetoggle=<F3>
 
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
+
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
+
 " Auto complete brackets
 "inoremap ( ()<Esc>i
 "inoremap [ []<Esc>i
